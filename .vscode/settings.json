@@ -1,0 +1,8 @@
+{
+  "todo-tree.tree.showBadges": false,
+  "todo-tree.tree.scanMode": "current file",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "todo-tree.tree.showCountsInTree": true,
+  "todo-tree.tree.disableCompactFolders": true
+}
