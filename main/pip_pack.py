@@ -4,7 +4,7 @@ import time
 
 import pandas as pd
 # import pyarrow.parquet as pq
-from azure.storage.blob.blockblobservice import BlockBlobService
+# from azure.storage.blob.blockblobservice import BlockBlobService
 from azure.storage.blob import ContainerClient
 import json
 import os
@@ -323,16 +323,17 @@ if __name__ == '__main__':
     model = Azure_blob(data_list1, container)
 
     # 创建sparksession
-    sparkConn = model.get_spark_connection()
-    sparkConn.sparkContext.setLogLevel("Error")
+    # sparkConn = model.get_spark_connection()
+    # sparkConn.sparkContext.setLogLevel("Error")
 
     # 　todo 2:指定经销商数据blob名读取
     kehu_business = model.get_blobs(b2)
 
-    print(kehu_business)
+    # print(kehu_business)
 
     # todo 3: 获取经销商代号列表
-    # kehu_business_code = list(model.get_kehu_code(kehu_business))
+    kehu_business_code = model.get_kehu_code(kehu_business)
+    print(kehu_business_code)
     # kehu_business_code = ['118000583','118000623','118000664','118000712','118000843']
     # end_list = ['118000131','118005361','118000021','118000411','118002298'
     # 
@@ -343,20 +344,20 @@ if __name__ == '__main__':
     #         kehu_business_code.remove(i)
     # print(kehu_business_code)
     # 为0则第一次运行删除当前分区
-    a = 1
+    # a = 1
 
-    # 切分供应商，解决内存溢出
-    chunk_size = 1
-    result = [kehu_business_code[i:i+chunk_size] for i in range(0, len(kehu_business_code), chunk_size)] 
-    jishu = [] 
-    for kehu_code in result:
+    # # 切分供应商，解决内存溢出
+    # chunk_size = 1
+    # result = [kehu_business_code[i:i+chunk_size] for i in range(0, len(kehu_business_code), chunk_size)] 
+    # jishu = [] 
+    # for kehu_code in result:
         
-        # todo 4：读取每月信息
-        try:
-            data_need_month = model.finish_etl(1, kehu_code)
-        except Exception as e:
-            jishu.append(kehu_code)
-            print(e)
-            continue
+    #     # todo 4：读取每月信息
+    #     try:
+    #         data_need_month = model.finish_etl(1, kehu_code)
+    #     except Exception as e:
+    #         jishu.append(kehu_code)
+    #         print(e)
+    #         continue
 
-    print(f"报错{len(jishu)}个：{jishu}")
+    # print(f"报错{len(jishu)}个：{jishu}")
