@@ -1,0 +1,39 @@
+expense_type,travel_or_not,domestic_or_oversea,expense_type_short_description,expense_type_long_description,general_ledge_account,general_ledge_account_description
+D - Accommodation,差旅,国内,住宿费,国内差旅住宿费,1410010000,Travel costs - domestic
+D - Entertainment,差旅,国内,招待费,国内差旅招待费,1411010000,Entertainment
+D - Laundry,差旅,国内,其他,国内差旅其他,1410010000,Travel costs - domestic
+D - Meals,差旅,国内,餐费,国内差旅餐费,1410010000,Travel costs - domestic
+D - Others,差旅,国内,其他,国内差旅其他,1410010000,Travel costs - domestic
+D - Transp.- Lease car - Rental fee(1-2 person),差旅,国内,交通费,国内差旅交通费,1410010000,Travel costs - domestic
+D - Transp.- Lease car - Rental fee(3-4 person),差旅,国内,交通费,国内差旅交通费,1410010000,Travel costs - domestic
+D - Transp.- Lease/Company car - Gas/Park/Toll,差旅,国内,交通费,国内差旅交通费,1410010000,Travel costs - domestic
+D - Transp.- Private car - Gas,差旅,国内,交通费,国内差旅交通费,1410010000,Travel costs - domestic
+D - Transp.- Private car - Park/Toll,差旅,国内,交通费,国内差旅交通费,1410010000,Travel costs - domestic
+D - Transp.-Taxi/Bus/Metro,差旅,国内,交通费,国内差旅交通费,1410010000,Travel costs - domestic
+D - Transp.-Train/Ferry,差旅,国内,交通费,国内差旅交通费,1410010000,Travel costs - domestic
+Entertainment,非差旅,国内,招待费,招待费,1411010000,Entertainment
+Freight,非差旅,国内,运费,运费,1426310000,Inbound : Freight
+Meals/OT Meals,非差旅,国内,餐费,餐费（OT 或误餐补助）,1405110801,Retirement & Welfare benefit
+Mobile/Tel.conf./Internet,非差旅,国内,电话费,电话费,1452010000,Communication
+O - Accommodation,差旅,国际,住宿费,国际差旅住宿费,1410110000,Travel costs - abroad
+O - Entertainment,差旅,国际,招待费,国际差旅招待费,1411010000,Entertainment
+O - Laundry,差旅,国际,旅其他,国际差旅其他,1410110000,Travel costs - abroad
+O - Meals,差旅,国际,餐费,国际差旅餐费,1410110000,Travel costs - abroad
+O - Others,差旅,国际,其他,国际差旅其他,1410110000,Travel costs - abroad
+O - Transp.- Lease car - Rental fee,差旅,国际,交通费,国际差旅交通费,1410110000,Travel costs - abroad
+O - Transp.-Taxi/Bus/Metro,差旅,国际,交通费,国际差旅交通费,1410110000,Travel costs - abroad
+O - Transp.-Train/Ferry,差旅,国际,交通费,国际差旅交通费,1410110000,Travel costs - abroad
+Others,非差旅,国内,其他,其他,1459910000,Other costs
+Parking/Toll fee/Gasoline,非差旅,国内,小车使用费,小车使用费,1415210800,Other personnel costs
+Plant supply/Sample,非差旅,国内,零星采购费,零星采购费,1427410000,Other costs
+Postage,非差旅,国内,快递费,快递费,1452110000,Communication
+Recruitment,非差旅,国内,招聘费,招聘费,1415010000,Recruitment
+Stationery/Office supply,非差旅,国内,办公用品,办公用品,1459010000,Stationery
+Taxi/Metro/Bus/Car,非差旅,国内,交通费,交通费,1415210000,Other personnel costs
+Team Building,非差旅,国内,团建费,团建费,1415410800,Social Security
+Training,非差旅,国内,培训费,培训费,1412010000,Training
+Welfare benefit,非差旅,国内,福利费,HR福利费,1405110801,Retirement & Welfare benefit
+Car maintenance,非差旅,国内,小车使用费,小车使用费,1450310000,Repair & Maintenance
+Conference,非差旅,国内,会议费,会议费,1447010000,Other sales costs
+Air tickets,差旅,国内,机票,机票,1410010000,Travel costs - domestic
+Air tickets,差旅,国际,机票,机票,1410110000,Travel costs - abroad
