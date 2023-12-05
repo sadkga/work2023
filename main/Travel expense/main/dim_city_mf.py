@@ -100,7 +100,14 @@ if __name__ == '__main__':
     new_index = {'aviation_city_code':   'city_code_external', 'city_name_local_language':      'city_name_local_language', 'city_name_EN':   'city_name_English', 'Province code':    'province_code', 'Province_name_local_language':   'province_name_local_language',  'Province_name_English':   'province_name_English', 'country_region_code':   'ISO_country_code',  'country_region_name':   'country_name_local_language', 'country_name_English':      'country_name_English'
                  }
     df_aviation = df_aviation.rename(columns=new_index)
+    group_col = list(new_index.values())
+    group_col.remove('city_code_external')
+    print(group_col)
+    df_aviation = df_aviation.groupby(group_col)['city_code_external'].agg(lambda x: '/'.join(map(str,x))).reset_index()
+    df_aviation['city_name_local_language'] = df_aviation['city_name_local_language'].str.strip() # 去除行首空格
+    df_aviation = df_aviation[new_index.values()]
+    
 
     # todo 3: 聚合
     df_result = pd.concat([df, df_aviation])
-    display(df_result)
+    display(df_aviation)
