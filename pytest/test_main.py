@@ -63,3 +63,7 @@ def send_to_email(receiver_email,subject,body):
 
 def test_send():
      send_to_email(['external.Zhaoxiang.Wang@cn.bosch.com'],'test','test')
+
+# =====================python语法测试======================
+def test_yufa():
+    print('overseas'.upper())
