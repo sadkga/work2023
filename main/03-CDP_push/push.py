@@ -1,3 +1,15 @@
+#!/usr/bin/env python
+# coding=utf-8
+"""
+ -- @ Creater      : sadkga sadkga@88.com
+ -- @ Since        : 2023-12-05 14:20:37
+ -- @ LastAuthor   : sadkga sadkga@88.com
+ -- @ LastTime     : 2023-12-09 23:54:01
+ -- @ Location     : \\code\\main\\03-CDP_push\\push.py
+ -- @ Message      : dafda dsafdsfadfsaf
+ -- @ Copyright (c) 2023 by sadkga@88.com, All Rights Reserved. 
+ """
+
 from pyspark import SparkConf
 from pyspark.sql import SparkSession
 import pandas as pd
@@ -7,6 +19,13 @@ import hashlib
 
 class TOBLOB():
     def __init__(self,blob_name,table_name):
+        """ 
+         * @ message : dsfadfadf afafadfad
+         * @ param2   [type] self: dsafdadad
+         * @ param2   [string] blob_name: sadfadfas
+         * @ param2   [blob] table_name: dsafdsaf
+         * @ return   [type]
+        """
         self.blob_name = blob_name
         self.table_name = table_name
 
@@ -30,17 +49,17 @@ if __name__ == '__main__':
 
     # get_mode
     Blob = TOBLOB(blob_name,table_name)
-
     # to_csv
-    loacl_path = 'C:/Users/WZH8SGH/OneDrive - Bosch Group/code/main/03-CDP_push/sample_data.csv'
-    d = pd.read_csv(loacl_path,encoding='ISO-8859-1')
-    f = d.to_csv(header=True,index=False)
+    loacl_path = '../../datas/CDP/sample_data.csv'
+    d = pd.read_csv(loacl_path,encoding='ISO-8859-1',dtype=str)
+    f = d.to_csv(header=True,index=False,sep='|',encoding='utf8')
+    print(d['vehicle_model_id'])
     md5_hash = hashlib.md5(f.encode()).hexdigest()
 
     # # # upload
-    Blob.get_blob_clib(blob_name,f)
-    Blob.get_blob_clib(md5_name,md5_hash)
+    # Blob.get_blob_clib(blob_name,f)
+    # Blob.get_blob_clib(md5_name,md5_hash)
 
-    r
+    
 
 # https://proddataplatcn3blob01.blob.core.chinacloudapi.cn/ads-wks-bss-parts-sales
