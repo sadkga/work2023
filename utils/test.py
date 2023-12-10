@@ -1,27 +1,21 @@
-from blob_utools import blob_tools,get_blob_clib
-
-
+#!/usr/bin/env python
+# coding=utf-8
+"""
+ -- @ Creater      : sadkga sadkga@88.com
+ -- @ Since        : 2023-12-10 00:06:53
+ -- @ LastAuthor   : sadkga sadkga@88.com
+ -- @ LastTime     : 2023-12-10 17:19:36
+ -- @ Location     : \\work2023\\utils\\test.py
+ -- @ Message      : 
+ -- @ Copyright (c) 2023 by sadkga@88.com, All Rights Reserved. 
+ """
+from blob_utools import blob_tools
+from datetime import datetime, timedelta
 
 if __name__ == '__main__':
-    data_list1 = ['Dealer_forecast', 'pig/AA_BDO/Region_Turnover']
-    blobContainName = 'bosch-dw-integration-layer'
-    b2 = data_list1[1]
-    i = '202308'
-
-    # todo 0：connect blob
-    container = get_blob_clib(blobContainName)
-    model = blob_tools(container)
-
-    
-    # todo 1: read xlsx
-    blobs = model.get_blobs(b2)
-    month_blob = model.get_month(blobs,-2)
-
-    print('月份：',i) 
-    # dir_file = b2+'/'+i
-    # dir_blob = model.get_blobs(dir_file)
-    # dir_blob = [dir_blob[0]]
-    # print(dir_blob)
-    # path = model.get_path(dir_blob,blobContainName)
-    # rows = model.read_excel(path)
-    # print(path,f'Total Rows: {rows}')
+    formatted_endtime = datetime.now()
+    formatted_endtime -= timedelta(days=99)
+    year = formatted_endtime.strftime("%Y")
+    month = formatted_endtime.strftime("%m")
+    day = formatted_endtime.strftime("%d")
+    print(month, day)

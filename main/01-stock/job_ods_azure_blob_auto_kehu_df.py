@@ -14,7 +14,7 @@ import os
 import sys
 from pyspark import SparkConf, SparkContext
 from pyspark.sql import SparkSession, HiveContext
-from datetime import datetime
+from datetime import datetime,timedelta
 
 
 def get_blob_clib(blobContainName):
@@ -41,11 +41,6 @@ class Azure_blob():
         # self.blobContainName =blobContainName
 
     def get_spark_connection(self):
-    '''
-    description: 
-    param {*} self
-    return {*}
-    '''
         spark = SparkSession.builder.config(conf=SparkConf().setAppName("pyspark—to-hive").set(
             "spark.hadoop.mapreduce.fileoutputcommitter.marksuccessfuljobs", "false")).enableHiveSupport().getOrCreate()
         sc = spark.sparkContext
@@ -60,12 +55,7 @@ class Azure_blob():
                                 endpoint_suffix='core.chinacloudapi.cn')
 
     def get_blobs(self, num):   
-    '''
-    description: 
-    param {*} self
-    param {*} num
-    return {*}
-    '''
+
         """获取指定容器一级目录下的blobs名称"""
         blobs = list(self.container.list_blobs(name_starts_with=(self.data_list[num] + '/')))
         blobs_list = []

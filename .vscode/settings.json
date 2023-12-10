@@ -3,6 +3,13 @@
   "todo-tree.tree.scanMode": "current file",
   "python.analysis.autoImportCompletions": true,
   "python.analysis.typeCheckingMode": "basic",
+  "python.pythonPath": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+
+  "python.analysis.extraPaths":[
+    "D:\\material\\OneDrive\\work\\work2023\\work2023\\utils",
+    "D:\\material\\OneDrive\\work\\work2023\\work2023",
+    "../utils"
+],
   "todo-tree.tree.showCountsInTree": true,
   "todo-tree.tree.disableCompactFolders": true,
   "git.ignoreLimitWarning": true

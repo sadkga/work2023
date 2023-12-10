@@ -1,28 +1,35 @@
-'''
-Author: wangzhaoxiang
-Date: 2023-12-02 10:40:07
-LastEditTime: 2023-12-02 10:52:26
-FilePath: \code\pytest\test_main.py
-Description: 
-'''
-def add(y,x):
-    return x +y
+#!/usr/bin/env python
+# coding=utf-8
+"""
+ -- @ Creater      : sadkga sadkga@88.com
+ -- @ Since        : 2023-12-10 00:06:53
+ -- @ LastAuthor   : sadkga sadkga@88.com
+ -- @ LastTime     : 2023-12-10 17:13:24
+ -- @ Location     : \\work2023\\pytest\\test_main.py
+ -- @ Message      : test
+ -- @ Copyright (c) 2023 by sadkga@88.com, All Rights Reserved. 
+ """
 
+from email.mime.text import MIMEText
+import smtplib
+
+
+def add(y, x):
+    return x + y
 
 
 def test_add():
-    assert add(1,3) == 4
-    
+    assert add(1, 3) == 4
+
+
 def test_ad():
-    assert add(1,3) == 3
-    
+    assert add(1, 3) == 3
+
 
 # ======================邮件测试============================================
 
-import smtplib
-from email.mime.text import MIMEText
 
-def send_to_email(receiver_email,subject,body):
+def send_to_email(receiver_email, subject, body):
     """请设置receiver_email、subject、body"""
 
     # 设置发件人和收件人
@@ -40,7 +47,7 @@ def send_to_email(receiver_email,subject,body):
     # 登录邮箱
     username = 'zhaoxiang_wang@leansight.cn'
     password = '8EadfD8k4TEB7De6'
-    
+
     server = smtplib.SMTP(smtp_server, 465)
     server.starttls()
     server.login(username, password)
@@ -60,10 +67,11 @@ def send_to_email(receiver_email,subject,body):
     #     server.quit()
 
 
-
 def test_send():
-     send_to_email(['external.Zhaoxiang.Wang@cn.bosch.com'],'test','test')
+    send_to_email(['external.Zhaoxiang.Wang@cn.bosch.com'], 'test', 'test')
 
 # =====================python语法测试======================
+
+
 def test_yufa():
     print('overseas'.upper())
