@@ -2,16 +2,16 @@
 # coding=utf-8
 """
  -- @ Creater      : sadkga sadkga@88.com
- -- @ Since        : 2023-12-10 00:06:53
+ -- @ Since        : 2023-12-02 17:38:08
  -- @ LastAuthor   : sadkga sadkga@88.com
- -- @ LastTime     : 2023-12-10 17:13:24
- -- @ Location     : \\work2023\\pytest\\test_main.py
- -- @ Message      : test
+ -- @ LastTime     : 2023-12-11 13:38:18
+ -- @ Location     : \\code\\pytest\\test_main.py
+ -- @ Message      : 
  -- @ Copyright (c) 2023 by sadkga@88.com, All Rights Reserved. 
  """
-
 from email.mime.text import MIMEText
 import smtplib
+import pytest
 
 
 def add(y, x):
@@ -75,3 +75,10 @@ def test_send():
 
 def test_yufa():
     print('overseas'.upper())
+
+
+number = 9
+width = 2
+# 使用 zfill 进行左侧补齐
+result = str(number).zfill(width)
+print(result)
