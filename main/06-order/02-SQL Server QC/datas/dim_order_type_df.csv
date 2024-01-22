@@ -1,0 +1,46 @@
+pk_order_type_id,order_type_desc,order_type_general_desc,order_category,order_category_desc,etl_load_time
+ZRPD,AACN Replacement(NB),Standard-no billing,C,Order,2023-08-15 18:13:26
+YACF,RBTW - Con Fil Order,Consignment,C,Order,2023-08-15 18:13:26
+YACI,RBTW - Con Iss Order,Consignment,C,Order,2023-08-15 18:13:26
+ZACF,RBTW - Con Fil Order,Consignment,C,Order,2023-08-15 18:13:26
+ZTP1,RBTW Third Party,Direct shipment,C,Order,2023-08-15 18:13:26
+ZCI,AAAP Cons Issue (KE),Consignment,C,Order,2023-08-15 18:13:26
+ZTP,AAAP Third Party,Direct shipment,C,Order,2023-08-15 18:13:26
+ZAR,RBTW:AA Airshp Order,Standard,C,Order,2023-08-15 18:13:26
+ZCA,AACN Consolidates SO,Standard,C,Order,2023-08-15 18:13:26
+ZCAD,AACN ADC Consoli.SO,Standard,C,Order,2023-08-15 18:13:26
+ZANE,RBAU:MTO-Night Exp,Standard,C,Order,2023-08-15 18:13:26
+ZEX,RBTW:AA Express Ord,Standard,C,Order,2023-08-15 18:13:26
+ZKOR,KR:AA Standard Ord,Standard,C,Order,2023-08-15 18:13:26
+ZOR,RBTW: AA Normal Ord,Standard,C,Order,2023-08-15 18:13:26
+ZSOP,SXCN Project Sales,Standard,C,Order,2023-08-15 18:13:26
+ZARO,AAAP Rush Order,Rush order,C,Order,2023-08-15 18:13:26
+YKNA,Standard Order AA,Standard,C,Order,2023-08-15 18:13:26
+ZKE1,KR:AA Express Ord,Standard,C,Order,2023-08-15 18:13:26
+ZREN,AACN Returns (RE),return,H,Returns,2023-08-15 18:13:26
+ZRCP,ARM Cons Pick-up,return,H,Returns,2023-08-15 18:13:26
+ZRES,Advanced Returns,return,H,Returns,2023-08-15 18:13:26
+ZBRD,Re. for direct ship.,return,H,Returns,2023-08-15 18:13:26
+ZCVR,AAAP Cons Return(KR),return,H,Returns,2023-08-15 18:13:26
+ZRNB,AACN RETURNS NO BILL,return,H,Returns,2023-08-15 18:13:26
+ZCP,AAAP Cons Pick-up,Consignment,C,Order,2023-08-15 18:13:26
+ZCU,AAAP Cons Fill-up,Consignment,C,Order,2023-08-15 18:13:26
+YTEX,RBTW - Export Sales,Standard,C,Order,2023-08-15 18:13:26
+YTWO,RBTW - Normal Sales,Standard,C,Order,2023-08-15 18:13:26
+ZARE,RBAU:Returns,return,H,Returns,2023-08-15 18:13:26
+YBRE,AAAP Return,return,H,Returns,2023-08-15 18:13:26
+ZKRE,KR:Returns,return,H,Returns,2023-08-15 18:13:26
+YKEA,Rush order AA,Rush order,C,Order,2023-08-15 18:13:26
+ZKEX,KR:Export Sales,Standard,C,Order,2023-08-15 18:13:26
+ZRNI,ARM-Replacement,return,H,Returns,2023-08-15 18:13:26
+ZRT,RBTW: AA Returns,return,H,Returns,2023-08-15 18:13:26
+ZEA,AAAP Express SO,Standard,C,Order,2023-08-15 18:13:26
+YKNE,Night Express,Standard,C,Order,2023-08-15 18:13:26
+ZSO,AACN Normal SO,Standard,C,Order,2023-08-15 18:13:26
+ZACD,RBAU:MTO-Consolidate,Standard,C,Order,2023-08-15 18:13:26
+ZAON,RBAU: St.Order onlin,Standard,C,Order,2023-08-15 18:13:26
+ZASO,RBAU: Standard Order,Standard,C,Order,2023-08-15 18:13:26
+ZEON,RBAU: Express online,Standard,C,Order,2023-08-15 18:13:26
+YACP,RBTW - Con Pic Order,return,H,Returns,2023-08-15 18:13:26
+YASR,RBTW - Returns Order,return,H,Returns,2023-08-15 18:13:26
+ZARA,RBAU:Web ShopReturns,return,H,Returns,2023-08-15 18:13:26

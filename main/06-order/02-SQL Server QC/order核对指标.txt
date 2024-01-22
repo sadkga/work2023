@@ -1,0 +1,16 @@
+sql server     data mart
+IAMOUNT         Net value (LC),  net_value_lc
+iOrder_qty      item_qty
+		（筛选is_open_order=Y）
+
+
+iDelivery_Qty     item_del_qty
+iBilling_Qty      item_bill_qty
+iPGI_Qty          item_goods_issue_qty
+iOpen_Delivery_Qty  open_order_qty
+iBalance_Qty       order_qty_wo_del
+
+
+
+corder_type		order_type
+
