@@ -82,3 +82,4 @@ width = 2
 # 使用 zfill 进行左侧补齐
 result = str(number).zfill(width)
 print(result)
+

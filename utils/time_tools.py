@@ -11,6 +11,7 @@
  """
 from datetime import datetime
 
+
 def get_last_month():
     """ 
      * @ message : 获取上个月月份
@@ -20,7 +21,7 @@ def get_last_month():
     current_year = current_date.year
     current_month = current_date.month
     previous_month = current_month - 1 if current_month > 1 else 12
-    previous_year = current_year if current_month > 1 else current_year -1
+    previous_year = current_year if current_month > 1 else current_year - 1
     last_month = str(previous_year) + str(previous_month).zfill(2)
     return last_month
 

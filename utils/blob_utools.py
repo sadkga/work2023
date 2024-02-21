@@ -21,11 +21,10 @@ import pyarrow.parquet as pq
 from datetime import datetime, timedelta
 
 
-class blob_tools():
+class BlobTools:
     """
         给定container对象，以应用blob工具
     """
-
     def __init__(self, blobContainName):
         self.blobContainName = blobContainName
         self.container = self.get_blob_clib(blobContainName)
@@ -161,7 +160,7 @@ class blob_tools():
             list: Slice list
         """
         kehu = [a.split('/')[num] for a in blobs]
-        if kehu == []:
+        if not kehu:
             return 1
         else:
             return kehu
@@ -196,7 +195,7 @@ class blob_tools():
         select * from {0}.{1} limit 1
         """.format(database, table, schema)
 
-        # excuter
+        # submit
         # sparkConn.sql(sql1) # drop table
         sparkConn.sql(sql2)
         t = sparkConn.sql(test)
