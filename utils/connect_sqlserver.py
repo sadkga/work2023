@@ -1,13 +1,4 @@
-# coding=utf-8
-"""
- -- @ Creater      : sadkga sadkga@88.com
- -- @ Since        : 2024-01-22 17:14:43
- -- @ LastAuthor   : sadkga sadkga@88.com
- -- @ LastTime     : 2024-01-22 17:14:43
- -- @ Location     : \\code\\utils\\connect_sqlserver.py
- -- @ Message      : 
- -- @ Copyright (c) 2024 by sadkga@88.com, All Rights Reserved. 
- """
+
 from pyspark.sql import SparkSession
 from pyspark import SparkConf, SparkContext
 from pyspark.sql import SparkSession, HiveContext
